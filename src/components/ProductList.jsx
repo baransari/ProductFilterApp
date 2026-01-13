@@ -1,5 +1,5 @@
-import React from 'react'
 import ProductItem from './ProductItem'
+import '../styles/product-list.css'
 
 const ProductList = ({products , searchText , onlyInStock}) => {
     const filteredProducts = products.filter(product => {
@@ -11,7 +11,7 @@ const ProductList = ({products , searchText , onlyInStock}) => {
         return <p>No products found.</p>;
     }
   return (
-    <div>
+    <div className='prodct-list'>
         {filteredProducts.map(product => (
             <ProductItem
                 key={product.id}

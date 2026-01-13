@@ -12,17 +12,18 @@ function App() {
   return (
 
     <>
-     <SearchBar
-      searchText={searchText}
-      onSearchChange={setSearchText}
-      onlyInStock={onlyInStock}
-      onStockChange={setOnlyInStock}
-     />
-     <ProductList
-      products={products}
-      searchText={searchText}
-      onlyInStock={onlyInStock}
-     />
+      <h1>Product Filter App</h1>
+      <SearchBar
+        searchText={searchText}
+        onSearchChange={setSearchText}
+        onlyInStock={onlyInStock}
+        onStockChange={setOnlyInStock}
+      />
+      <ProductList
+        products={products}
+        searchText={searchText}
+        onlyInStock={onlyInStock}
+      />
     </>
   )
 }

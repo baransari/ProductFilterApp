@@ -1,11 +1,11 @@
-import React from 'react'
+import '../styles/product-item.css'
 
 const ProductItem = ({product}) => {
   return (
-    <div>
-        <span style={{color : product.inStock? 'black' : 'red'}}>{product.name}</span>
-        <span>{product.price}</span>
-        <span>{product.inStock ? 'In Stock' : 'Out of Stock'}</span>
+    <div className='product-item'>
+        <div style={{color : product.inStock? 'black' : 'red'}}>{product.name}</div>
+        <span>{product.price}₺</span>
+        <span>{product.inStock ? '-In Stock' : '-Out of Stock'}</span>
     </div>
   )
 }
